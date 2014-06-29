@@ -23,10 +23,10 @@ $respon["surahquran"] = array();
 
 	while($baris = mysqli_fetch_array($hasil)) {
 	$surahquran = array();
-	$surahquran["id"] = $baris["id"];
-	$surahquran["namasurah"] = $baris ["namasurah"];
-	$surahquran["keterangan"] = $baris["keterangan"];	
-	
+	$surahquran["id"] 		= $baris["id"];
+	$surahquran["namasurah"]	= $baris ["namasurah"];
+	$surahquran["keterangan"] 	= $baris["keterangan"];	
+	$surahquran["kode"] 		= $baris["kode"];	
 
 	array_push($respon["surahquran"], $surahquran);
 }
